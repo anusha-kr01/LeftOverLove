@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  margin-left: 220px;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+/* Utility classes */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+  margin: 2rem auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Form styles */
+input, textarea, select, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+button {
+  background: #27ae60;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #219150;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
+
+/* Snackbar/alert style (for feedback messages) */
+.snackbar {
+  background: #2ecc71;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.14);
+  z-index: 1000;
+  animation: fadeInUp 0.4s;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Optional: Dark mode support */
+body.dark-mode {
+  background: #1e272e;
+  color: #ecf0f1;
+}
+body.dark-mode .content {
+  background: #2f3640;
+}
+body.dark-mode .container {
+  background: #353b48;
+  color: #ecf0f1;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: #485460;
+  color: #ecf0f1;
+  border-color: #636e72;
+}
+body.dark-mode button {
+  background: #5758bb;
+}
+body.dark-mode button:hover {
+  background: #3d3d6b;
+}

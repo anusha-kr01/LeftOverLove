@@ -1,1 +1,2 @@
-# LeftOverLove
+Need to install node modules since its a react app... 
+Change the UI/UX since it needs improvement
