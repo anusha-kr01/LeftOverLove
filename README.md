@@ -77,5 +77,3 @@ Inspired by the idea of using tech for good, *LeftoverLove* is our effort to fig
 ## 📄 License
 
 MIT License
-
----
